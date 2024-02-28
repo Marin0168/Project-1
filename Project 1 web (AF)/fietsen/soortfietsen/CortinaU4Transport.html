@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluitende Fietser</title>
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/soortfietsen/SoortFiets.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <script src="../../javascript/index.js" defer></script>
+    <script src="../javascript/fietsenwinkel.js"></script>
+    <link rel="icon" type="image/x-icon" href="../../img/fiets.png">
+</head>
+<body>
+    <header>
+        <div id="test">
+        <h1 id="intro">Fluitende Fietser</h1>
+        <a href="../../index.html"><img id="logo" src="../../img/fiets.png" alt="logo"></a> 
+        </div>
+
+        <div id="hoofd">
+            <div class="menu">
+                <a href="../../index.html">HomePage</a>
+                </div>
+                <div class="menu selected">
+                    <a href="../fietsen.html">Fietsen</a>
+                </div>
+            <div class="menu">
+                <a href="../fietsverhuur.html">Verhuur</a> 
+            </div>
+            <div class="menu">
+                Klantenservice
+                <div class="submenu">
+                    <a href="../../info.html">Contact</a>
+                    <a href="../../geschiedenis.html">Over ons</a>
+                    <a href="../../goededoel.html">Goede Doel</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="hoofd-extra">
+            
+            <div class="menu">
+                Menu
+                <div class="submenu">
+                    <a href="../../info.html">Contact</a>
+                    <a href="../../geschiedenis.html">Over ons</a>
+                    <a href="../../fietsen/fietsverhuur.html">Verhuur</a> 
+                    <a href="../../fietsen/fietsen.html">Fietsen</a>
+                    <a href="../../index.html">HomePage</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="product-details">
+        <h2>Cortina U4 Transport</h2>
+        <img src="../../img/verschillende_fietsen/Cortina_U4_Transport_R3_Transportfiets.png" alt="Cortina Foss Stadsfiets">
+        <p>Prijs: €620,-</p>
+        <p>Kleur: Zwart</p>
+        <p>Versnellingen: 8</p>
+        <p>Mannenfiets</p>
+        <p>Nieuw</p>
+        <p>Fietscode: A5B2C9</p>
+        <button>Koop nu</button>
+    </div>
+    
+    <div class="recommended-products">
+        <h3>Aanbevolen fietsen</h3>
+        <div class="recommended-item">
+            <img src="../../img/verschillende_fietsen/Cube-Touring-Hybride-fiets.png" alt="Aanbevolen fiets 1">
+            <p>Cube Touring Hybride</p>
+            <button onclick="CubetouringHybride()">Meer info</button>
+        </div>
+        <div class="recommended-item">
+            <img src="../../img/verschillende_fietsen/Cortina_Foss_ND3_Stadsfiets.png" alt="Aanbevolen fiets 2">
+            <p>Cortina Foss</p>
+            <button onclick="CortinaFoss()">Meer info</button>
+        </div>
+    </div>
+    <script>
+        function CubetouringHybride(){
+            window.location.href = "CubetouringHybride.html";
+        }
+        function CortinaFoss(){
+            window.location.href = "CortinaFoss.html";
+        }
+    </script>
+    
+    <footer>
+        <div id="footer">
+            <div class="voetstuk">
+            <p>KVK: 88599665</p>
+            <p>BTW: NL999888492Z09</p>
+            <p>&copy; 2023 Fluitende Fietser</p>
+            </div>
+            <div class="voetstuk">
+                
+                <a href="../../info.html"><p>Contact</p></a>
+                <a href="../../geschiedenis.html"><p>Over ons</p></a>
+                <a href="https://www.bovag.nl/BovagWebsite/media/BovagMediaFiles/Downloads/Garantie%20en%20voorwaarden/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf" target="_blank"><p>Algemene voorwaarden</p></a>
+            </div>
+            <div class="voetstuk">
+                <a href="mailto:info@fluitendefietser.nl?"><p>Stuur een e-mail</p></a>
+                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+            </div>
+        </div>  
+        <div id="fietsDiv">
+            <div id="fietsie">
+                 <img src="../../img/fiets.png" alt="fiets" id="fiets1">
+            </div>    
+        </div>
+    </footer>
+</body>
+</html>

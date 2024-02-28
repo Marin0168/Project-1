@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluitende Fietser</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/fietsen.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../javascript/index.js" defer></script>
+    <script src="../javascript/fietsenwinkel.js"></script>
+    <link rel="icon" type="image/x-icon" href="../img/fiets.png">
+</head>
+<body>
+    <header>
+        <div id="test">
+        <h1 id="intro">Fluitende Fietser</h1>
+        <a href="../index.html"><img id="logo" src="../img/fiets.png" alt="logo"></a> 
+        </div>
+
+        <div id="hoofd">
+            <div class="menu">
+                <a href="../index.html">HomePage</a>
+                </div>
+                <div class="menu selected">
+                    <a href="fietsen.html" >Fietsen</a>
+                </div>
+            <div class="menu">
+                <a href="fietsverhuur.html">Verhuur</a> 
+            </div>
+            <div class="menu">
+                Klantenservice
+                <div class="submenu">
+                    <a href="../info.html">Contact</a>
+                    <a href="../geschiedenis.html">Over ons</a>
+                    <a href="../goededoel.html">Goede Doel</a>
+
+                </div>
+            </div>
+            
+            
+            <div class="winkelwagenDiv">
+                <p id="winkelwagenAdd" class="winkelwagen">0</p>
+                <img src="../img/winkelwagen.jpg" alt="">
+            </div>
+        </div>
+        <div id="hoofd-extra">
+            
+            <div class="menu">
+                Menu
+                <div class="submenu">
+                    <a href="../info.html">Contact</a>
+                    <a href="../geschiedenis.html">Over ons</a>
+                    <a href="../fietsen/fietsverhuur.html">Verhuur</a> 
+                    <a href="../fietsen/fietsen.html">Fietsen</a>
+                    <a href="../index.html">HomePage</a>
+                </div>
+                
+            </div>
+            <div class="winkelwagenDiv">
+                <p class="winkelwagen" id="winkelwagen">0</p>
+                <img src="../img/winkelwagen.jpg" alt="">
+            </div>
+        </div>
+
+        
+
+        
+    </header>
+
+    <div class="container">
+        <aside>
+            <nav>
+                <p>Zoeken</p>
+                <input type="text" placeholder="Zoeken...">
+                <p>Geslacht:</p>
+                <p><input type="checkbox" id="heren" onchange="filterItems()"> HerenFiets</p>
+                <p><input type="checkbox" id="vrouwen" onchange="filterItems()"> DamesFiets</p>
+                <p>Merk:</p>
+                <p><input type="checkbox" id="Cortina" onchange="filterItems()"> Cortina</p>
+                <p><input type="checkbox" id="Cube" onchange="filterItems()"> Cube</p>
+            </nav>
+        </aside>
+
+        <main>
+            <article>
+                <div id="flex">
+                    <div class="grid">
+                        <div class="item vrouwen" data-merk="Cortina" id="cortinaFoss" onmouseover="showInfo('cortinaFoss')" onmouseout="hideInfo('cortinaFoss')">
+                            <p>Cortina Foss ND3 Stadsfiets</p>
+                            <a href="soortfietsen/CortinaFoss.html"><img src="../img/verschillende_fietsen/Cortina_Foss_ND3_Stadsfiets.png" alt=""></a>
+                            <button class="winkel" onclick="fietsAdd('cortinaFoss')">Winkelwagen</button>
+                            <div class="info" id="cortinaFossInfo">
+                                <p>Prijs: €560,-</p>
+                                <p>Kleur: Zwart</p>
+                                <p>Versnellingen: 7</p>
+                                <p>Vrouwenfiets</p>
+                                <p>Nieuw</p>
+                                <p>Fietscode: X8Y3Z2</p>
+                            </div>
+                        </div>
+        
+                        <div class="item heren" data-merk="Cortina" id="cortinaU4" onmouseover="showInfo('cortinaU4')" onmouseout="hideInfo('cortinaU4')">
+                            <p>Cortina U4 Transport R3</p>
+                            <a href="soortfietsen/CortinaU4Transport.html"><img src="../img/verschillende_fietsen/Cortina_U4_Transport_R3_Transportfiets.png" alt=""></a>
+                            <button class="winkel" onclick="fietsAdd('cortinaU4')">Winkelwagen</button>
+                            <div class="info" id="cortinaU4Info">
+                                <p>Prijs: €620,-</p>
+                                <p>Kleur: Zwart</p>
+                                <p>Versnellingen: 8</p>
+                                <p>Mannenfiets</p>
+                                <p>Nieuw</p>
+                                <p>Fietscode: A5B2C9</p>
+                            </div>
+                        </div>
+        
+                        <div class="item heren" data-merk="Cube" id="cubeTouring" onmouseover="showInfo('cubeTouring')" onmouseout="hideInfo('cubeTouring')">
+                            <p>Cube Touring Hybride fiets</p>
+                            <a href="soortfietsen/CubetouringHybride.html"><img src="../img/verschillende_fietsen/Cube-Touring-Hybride-fiets.png" alt=""></a>
+                            <button class="winkel" onclick="fietsAdd('cubeTouring')">Winkelwagen</button>
+                            <div class="info" id="cubeTouringInfo">
+                                <p>Prijs: €1620,-</p>
+                                <p>Kleur: blauw</p>
+                                <p>Versnellingen: 32</p>
+                                <p>Mannenfiets</p>
+                                <p>Nieuw</p>
+                                <p>Fietscode: P7Q6R3</p>
+                            </div>
+                        </div>
+        
+                        <div class="item heren" data-merk="Cube" id="cubeKathmanduPro" onmouseover="showInfo('cubeKathmanduPro')" onmouseout="hideInfo('cubeKathmanduPro')">
+                            <p>Cube Kathmandu Pro Hybride fiets</p>
+                            <a href="soortfietsen/CubeKathmanduPro.html"><img src="../img/verschillende_fietsen/Cube-Kathmandu-Pro-Hybride-fiets.png" alt=""></a>
+                            <button class="winkel" onclick="fietsAdd('cubeKathmanduPro')">Winkelwagen</button>
+                            <div class="info" id="cubeKathmanduProInfo">
+                                <p>Prijs: €440,-</p>
+                                <p>Kleur: blauw</p>
+                                <p>Versnellingen: 12</p>
+                                <p>Mannenfiets</p>
+                                <p>Nieuw</p>
+                                <p>Fietscode: M1N8O4</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <div id="footer">
+            <div class="voetstuk">
+            <p>KVK: 88599665</p>
+            <p>BTW: NL999888492Z09</p>
+            <p>&copy; 2023 Fluitende Fietser</p>
+            </div>
+            <div class="voetstuk">
+                
+                <a href="../info.html"><p>Contact</p></a>
+                <a href="../geschiedenis.html"><p>Over ons</p></a>
+                <a href="https://www.bovag.nl/BovagWebsite/media/BovagMediaFiles/Downloads/Garantie%20en%20voorwaarden/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf" target="_blank"><p>Algemene voorwaarden</p></a>
+            </div>
+            <div class="voetstuk">
+                <a href="mailto:info@fluitendefietser.nl?"><p>Stuur een e-mail</p></a>
+                <a href="https://www.facebook.com/"><p>Facebook</p></a>
+            </div>
+        </div>  
+        <div id="fietsDiv">
+            <div id="fietsie">
+                 <img src="../img/fiets.png" alt="fiets" id="fiets1">
+            </div>    
+        </div>
+    </footer>
+</body>
+</html>

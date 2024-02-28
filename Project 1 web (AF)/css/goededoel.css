@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.goededoel1, .goededoel2 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.goededoel1 {
+    background-color: #B45FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 500px;
+}
+
+.goededoel1:hover {
+    background-color: #815FFA;
+}
+
+.goededoel2 {
+    background-color: #B45FFA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 500px;
+}
+
+.goededoel2:hover {
+    background-color: #815FFA;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #0079a0;
+    text-align: center;
+}
+
+.goededoel1, .goededoel2 {
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #0079a0;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    width: 40%;
+}
+
+.goededoel1 a{
+    text-decoration: none;
+}
+
+.goededoel2 a{
+    text-decoration: none;
+}
+
+.goededoel1:hover, .goededoel2:hover {
+    background-color: #0079a0;
+}
+
+#watWijDoen {
+    width: 90%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+#watWijDoen:hover {
+    background-color: #815FFA;
+}
+
+
+@media screen and (max-width: 767px) {
+    .goededoel1, .goededoel2 {
+        width: 30%;
+    }
+  }

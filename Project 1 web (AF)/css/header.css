@@ -1,0 +1,161 @@
+/* Algemene stijlen */
+
+body {
+    background-color: #5F9FFA;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Voeg een standaard lettertype toe */
+}
+
+/* Header stijlen */
+
+header {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #333;
+    position: relative; /* Maak de positie relatief voor mobiele weergave */
+}
+
+#intro {
+    font-size: 34px;
+    margin: 0;
+    color: lightblue;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+/* Menu stijlen */
+
+#hoofd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#hoofd-extra {
+    align-items: left;
+    justify-content: left;
+    margin-left: 100px;
+    display: none;
+}
+
+
+.menu {
+    margin: 0 10px;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding-top: 10px;
+    display: inline-block; /* Maak menu-items inline-block voor mobiele weergave */
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu:hover {
+    background-color: #555;
+}
+
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: lightblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: visibility 0s, opacity 0.5s ease; /* Voeg een overgangseffect toe */
+}
+
+
+.menu:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+}
+
+.submenu a:hover {
+    background-color: #777;
+}
+
+/* Media Queries voor verschillende apparaten */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 15px 0;
+    }
+    
+    #logo {
+        width: 80px;
+        top: 8px;
+        left: 8px;
+    }
+    
+    .menu {
+        padding-top: 8px;
+        margin: 0 5px;
+    }
+    
+    .submenu {
+        top: 25px;
+    }
+    
+    .submenu a {
+        padding: 8px 15px;
+    }
+
+    #hoofd{
+        display: none;
+    }
+
+    #hoofd-extra{
+        display: flex;
+    }
+}
+
+/* Mobiel */
+@media screen and (max-width: 480px) {
+    header {
+        padding: 10px 0;
+    }
+    
+    #logo {
+        width: 60px;
+        top: 6px;
+        left: 6px;
+    }
+    
+    .menu {
+        padding-top: 6px;
+        margin: 0 3px;
+    }
+    
+    .submenu {
+        top: 30px;
+    }
+    
+    .submenu a {
+        padding: 8px 10px;
+    }
+
+
+}

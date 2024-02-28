@@ -1,0 +1,168 @@
+.carrousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Stel hier het gewenste maximumformaat in */
+    margin: 0 auto; /* Centreer de carrousel op de pagina */
+}
+
+
+#fiets{
+    width: 100%;
+    margin-top: 20px;
+    transition: ease 2s;
+}
+
+.prev{
+    display: flex;
+    cursor: pointer;
+    transition: ease 2s;
+
+}
+
+.next{
+    display: flex;
+    cursor: pointer;
+}
+
+#weiland{
+    background-image: url("../img/weiland.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    
+}
+
+#openingstijden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Toegevoegde regel */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+
+
+#openingstijden p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#plaatje{
+    width: 200px;
+}
+
+#vakje {
+    width: 710px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  #fotos {
+    display: flex;
+    position: absolute;
+    transition: transform 0.5s ease;
+    transform: translateX(50px);
+    gap: 30px; /* Voeg meer ruimte toe tussen de afbeeldingen */
+}
+
+#fotos img {
+    height: 520px;
+    object-fit: cover;
+    margin: 0; /* Verwijder standaardmarges tussen afbeeldingen */
+}
+
+  
+@media only screen and (max-width: 600px) {
+    #weiland {
+        height: 300px; /* Aanpassen aan de gewenste hoogte op mobiele apparaten */
+    }
+
+    .carrousel {
+        max-width: 90%; /* Pas de breedte van de carrousel aan */
+        margin: 0 auto; /* Centreer de carrousel */
+        width: 80%;
+    }
+
+    #vakje {
+        width: 100%; /* Zorg ervoor dat de afbeeldingen de volledige breedte gebruiken */
+    }
+
+    #fotos img {
+        width: 100%; /* Zorg ervoor dat de afbeeldingen de volledige breedte gebruiken */
+        height: auto; /* Pas de hoogte automatisch aan op basis van de breedte */
+    }
+
+    #openingstijden {
+        width: 90%; /* Pas de breedte van de openingstijden sectie aan */
+        margin: 20px auto; /* Centreer de openingstijden sectie */
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    #weiland {
+        height: 400px; /* Aanpassen aan de gewenste hoogte op mobiele apparaten */
+    }
+
+    .carrousel {
+        max-width: 90%; /* Pas de breedte van de carrousel aan */
+        margin: 0 auto; /* Centreer de carrousel */
+        width: 80%;
+    }
+
+    #vakje {
+        width: 100%; /* Zorg ervoor dat de afbeeldingen de volledige breedte gebruiken */
+    }
+
+    #fotos img {
+        width: 100%; /* Zorg ervoor dat de afbeeldingen de volledige breedte gebruiken */
+        height: auto; /* Pas de hoogte automatisch aan op basis van de breedte */
+    }
+
+    #openingstijden {
+        width: 90%; /* Pas de breedte van de openingstijden sectie aan */
+        margin: 20px auto; /* Centreer de openingstijden sectie */
+    }    
+}
+  
+#welkomsttekst {
+    text-align: center;
+    padding: 30px;
+}
+
+#welkomsttekst h2 {
+    color: black; /* Blauwe kleur voor de kop */
+}
+
+#welkomsttekst p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+}
+
+
+#klantrecensies {
+    margin-top: 20px;
+}
+
+.recensie {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.recensie p:first-child {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.recensie p:last-child {
+    text-align: right;
+    color: #555;
+}

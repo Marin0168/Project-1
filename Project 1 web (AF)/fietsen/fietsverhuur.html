@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/fietsverhuur.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../javascript/index.js" defer></script>
+    <script src="../javascript/fietsverhuur.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="../img/fiets.png">
+</head>
+<body>
+    <header>
+        <div id="test">
+        <h1 id="intro">Fluitende Fietser</h1>
+        <a href="../index.html"><img id="logo" src="../img/fiets.png" alt="logo"></a> 
+        </div>
+
+        <div id="hoofd">
+            <div class="menu">
+                <a href="../index.html">HomePage</a>
+                </div>
+                <div class="menu">
+                    <a href="fietsen.html">Fietsen</a>
+                </div>
+            <div class="menu selected">
+                <a href="fietsverhuur.html">Verhuur</a> 
+            </div>
+            <div class="menu">
+                Klantenservice
+                <div class="submenu">
+                    <a href="../info.html">Contact</a>
+                    <a href="../geschiedenis.html">Over ons</a>
+                    <a href="../goededoel.html">Goede Doel</a>
+
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div id="hoofd-extra">
+            
+            <div class="menu">
+                Menu
+                <div class="submenu">
+                    <a href="../info.html">Contact</a>
+                    <a href="../geschiedenis.html">Over ons</a>
+                    <a href="../fietsen/fietsverhuur.html">Verhuur</a> 
+                    <a href="../fietsen/fietsen.html">Fietsen</a>
+                    <a href="../index.html">HomePage</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1 id="offerte">Vraag direct jouw offerte aan!</h1>
+        <p>Ervaar het gemak van jouw offerte binnen handbereik in slechts twee eenvoudige stappen!</p>
+        <p>Bij de Fluitende Fietser maken we het aanvragen van jouw persoonlijke offerte moeiteloos.</p>
+        <p>Kies simpelweg jouw favoriete fiets en vraag binnen enkele ogenblikken jouw offerte aan.</p>
+        <p>Maak het jezelf makkelijk en ontdek vandaag nog jouw ideale fiets bij de Fluitende Fietser!</p>
+
+        <div class="container">
+            
+            <form id="multiStepForm">
+                <div class="formStep" id="step1">
+                    <h2>Stap 1: Periode en locatie</h2>
+                    <!-- Velden voor stap 1 -->
+                    <label for="beginDatum">Begin Datum: </label>
+                    <input type="date" id="beginDatum" name="Begin-Datum" required>
+                
+                    <label for="eindDatum">Eind Datum: </label>
+                    <input type="date" id="eindDatum" name="Eind-Datum" required>
+                
+                    <label for="locatie">Locatie:</label>
+                    <input type="text" id="locatie" name="locatie" required>
+                
+                    <label for="soortFiets">Soort Fiets:</label>
+                    <select name="fietsSoort" id="soortFiets" required onchange="showPhoto()">
+                        <option value="" disabled selected>Selecteer een fietssoort</option>
+                        <option value="normaleFiets">Normale Fiets</option>
+                        <option value="bakFiets">Bak Fiets</option>
+                        <option value="omaFiets">Oma Fiets</option>
+                        <option value="elektrischeFiets">Elektrische Fiets</option>
+                    </select>
+                    <img id="fietsPhoto" src="../img/NormaleFiets.png" alt="Bike Photo">
+
+                
+                    <label for="aantalFietsen">Aantal Fietsen:</label>
+                    <input type="number" id="aantalFietsen" required>
+                
+                    <!-- Knop voor doorgaan naar stap 2 -->
+                    <button class="volgende" type="button" onclick="nextStep(2)">Volgende</button>
+                </div>
+                
+                <div class="formStep" id="step2">
+                    <h2>Stap 2: Eigen gegevens</h2>
+                    <!-- Velden voor stap 2 -->
+                    <label for="naam">Naam:</label>
+                    <input type="text" id="naam" name="naam" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <!-- Knop voor terug naar stap 1 -->
+                    <button class="volgende" type="button" onclick="prevStep(1)">Terug</button>
+                    
+                    <!-- Knop voor versturen -->
+                    <button class="volgende" type="submit">Versturen</button>
+                </div>
+            </form>
+            
+            
+        </div>
+        <footer>
+            <div id="footer">
+                <div class="voetstuk">
+                <p>KVK: 88599665</p>
+                <p>BTW: NL999888492Z09</p>
+                <p>&copy; 2023 Fluitende Fietser</p>
+                </div>
+                <div class="voetstuk">
+                    
+                    <a href="../info.html"><p>Contact</p></a>
+                    <a href="../geschiedenis.html"><p>Over ons</p></a>
+                    <a href="https://www.bovag.nl/BovagWebsite/media/BovagMediaFiles/Downloads/Garantie%20en%20voorwaarden/Algemene-voorwaarden-BOVAG-tweewielerbedrijven-april-2018.pdf" target="_blank"><p>Algemene voorwaarden</p></a>
+                </div>
+                <div class="voetstuk">
+                    <a href="mailto:info@fluitendefietser.nl?"><p>Stuur een e-mail</p></a>
+                    <a href="https://www.facebook.com/"><p>Facebook</p></a>
+                </div>
+            </div>  
+            <div id="fietsDiv">
+                <div id="fietsie">
+                     <img src="../img/fiets.png" alt="fiets" id="fiets1">
+                </div>    
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

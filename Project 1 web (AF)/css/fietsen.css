@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+}
+
+
+
+.container {
+    display: flex;
+}
+
+aside {
+    width: 250px;
+    padding: 15px;
+    background-color: #5F6EFA;
+}
+
+main {
+    flex: 1;
+    padding: 15px;
+}
+
+
+nav {
+    padding-right: 15px;
+    margin-right: 15px;
+}
+
+nav p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+nav input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#flex{
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Eerste rij met 3 kolommen */
+    grid-template-rows: 1fr 1fr; /* Twee rijen met gelijke hoogte */
+    gap: 5px; 
+    
+}
+
+.item {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column; /* Elementen worden nu in een kolom geplaatst */
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    border-right: 1px dotted #ccc;
+    margin-top: 55px;
+}
+
+.item p {
+    text-align: center;
+    margin: 0;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.winkel{
+    margin-top: 10px;
+    background-color: #B45FFA;
+    border: 1px solid #815FFA;
+    border-radius: 20%;
+}
+
+.item:hover{
+cursor: pointer;
+}
+
+.winkelwagenDiv{
+    width: 100px;
+    height: auto;
+    position: absolute;
+    top: 10px; /* Afstand vanaf de bovenkant van de pagina */
+    right: 10px; /* Afstand vanaf de linkerzijde van de pagina */
+    z-index: 2; /* Zorg ervoor dat het logo bovenop andere elementen staat */
+    margin: -10px;
+    margin-top: -10px;
+    color: white;
+}
+
+.winkelwagenDiv img{
+    width: 50px;
+    margin-top: -10px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr); /* Verander naar één kolom voor kleine schermen */
+    }
+
+    .item {
+        width: 80%;
+        height: auto; /* Pas hoogte automatisch aan content aan */
+        border-right: none; /* Verwijder de rechtergrens om items volledig te scheiden */
+        margin-top: 20px; /* Marge tussen elk item vergroten */
+    }
+
+
+    aside {
+        width: 100px; /* Neemt de volledige breedte in beslag op kleine schermen */
+        padding: 10px; /* Pas de padding aan voor kleinere schermen */
+    }
+
+    nav p {
+        width: 100px; /* Beperk de tekstbreedte in de nav naar 100px */
+        white-space: nowrap; /* Voorkom dat tekst naar de volgende regel gaat */
+        overflow: hidden; /* Verberg de overlopende tekst */
+        text-overflow: ellipsis; /* Voeg "..." toe aan het einde van overlopende tekst */
+    }
+
+
+}
+
+@media only screen and (min-width: 901){
+    .item:hover{
+        width: 249px;
+        height: 149px;
+        border: 1px solid gray;
+        cursor: pointer;
+    }
+
+}

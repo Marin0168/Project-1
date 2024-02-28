@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header #hoofd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.menu {
+    margin: 0 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Product sectie */
+.product-details {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.product-details h2 {
+    font-size: 24px;
+}
+
+.product-details img {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Aanbevolen fietsen sectie */
+.recommended-products {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.recommended-products h3 {
+    font-size: 20px;
+}
+
+.recommended-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.recommended-item img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* ... (voorgaande CSS-code) ... */
+
+.filter-bar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.filter-bar label {
+    margin-right: 10px;
+}
+
+.filter-bar select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ... (rest van de CSS-code) ... */

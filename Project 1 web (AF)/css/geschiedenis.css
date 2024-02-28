@@ -1,0 +1,54 @@
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3em;
+  }
+  
+  p {
+    text-align: justify;
+    line-height: 1.6;
+  }
+  
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li:before {
+    content: "• ";
+  }
+  
+  .over-ons {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .advantages {
+    text-align: center;
+  }
+  
+  .advantages ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .advantages li {
+    margin: 10px;
+    padding: 15px 20px;
+    border: 2px solid lightblue;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .advantages li:hover {
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+  }
+  
+  

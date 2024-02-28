@@ -1,0 +1,70 @@
+.openingstijden,
+.adres {
+    width: 50%; /* Verdeel de ruimte in tweeën */
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Zorg ervoor dat de elementen naast elkaar worden geplaatst */
+main {
+    display: flex;
+}
+
+/* Voeg een beetje ruimte tussen de openingstijden en het adres toe */
+.openingstijden {
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .openingstijden,
+  .adres {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  iframe {
+    border-radius: 10px;
+    width: 80%;
+    height: 450px; 
+
+  }
+  
+  form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+#input-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.styled-input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-decoration: underline; /* Onderstreepte tekst */
+}
+
+#submitButton {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#submitButton:hover {
+    background-color: #0056b3;
+}
+

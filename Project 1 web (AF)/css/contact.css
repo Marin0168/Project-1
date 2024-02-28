@@ -1,0 +1,21 @@
+#input-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas: 
+    "name lastName"
+    "email email"
+    "message message"
+    "message message"
+    "button button";
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 5vh;
+
+}
+input{margin: 2px;}
+#inputUserName{grid-area: name;}
+#inputUserLastname{grid-area: lastName;}
+#inputUserEmail{grid-area: email;}
+#inputUserMessage{grid-area: message; height: 15vh;}
+#submitButton{grid-area: button;}
